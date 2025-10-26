@@ -1,0 +1,188 @@
+/*
+ * CSS FOR LEVEL 1 PORTFOLIO (portfolio.css)
+ * Use this file from the previous response - no changes needed for new content!
+ */
+
+/* --- Custom Variables & Global Resets --- */
+:root {
+    /* Reusing the attractive color palette */
+    --color-primary: #6f42c1;     /* Deep Purple */
+    --color-secondary: #17a2b8;   /* Vibrant Teal */
+    --color-text: #343a40;        /* Dark Charcoal */
+    --color-background: #f8f9fa;  /* Light background */
+    --color-white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+/* Container for Centering Content */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* General Section Styling */
+.section {
+    padding: 80px 0; 
+}
+
+.section h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    color: var(--color-primary);
+    position: relative;
+}
+
+/* --- 1. Hero/Intro Section --- */
+.hero-intro {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    text-align: center;
+    padding: 150px 0; 
+}
+
+.hero-intro h1 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.hero-intro .subtitle {
+    font-size: 1.3em;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+/* Call-to-Action Button (Contrasting) */
+.cta-button {
+    display: inline-block;
+    background-color: var(--color-secondary);
+    color: white !important;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.2s;
+}
+.cta-button:hover {
+    background-color: #138496;
+    transform: scale(1.05);
+}
+
+/* --- 2. About Me Section --- */
+.about-me {
+    background-color: var(--color-white);
+}
+
+.about-grid {
+    display: flex; 
+    gap: 40px;
+    align-items: center; 
+}
+
+/* Profile Picture Container Styles */
+.profile-pic {
+    flex-shrink: 0; 
+    width: 250px;
+    height: 250px;
+    border-radius: 50%; 
+    border: 5px solid var(--color-secondary);
+    overflow: hidden; 
+}
+
+/* Image styles */
+.profile-pic img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.bio p {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+/* --- 3. Skills Section --- */
+.skills-section {
+    background-color: var(--color-background);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px;
+}
+
+.skill-item {
+    background-color: var(--color-white);
+    padding: 25px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.skill-item h3 {
+    color: var(--color-secondary);
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+
+/* --- 4. Contact Footer --- */
+.contact-footer {
+    background-color: var(--color-text); 
+    color: var(--color-white);
+    text-align: center;
+    padding: 40px 0;
+}
+
+.contact-footer p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.contact-info span {
+    margin: 0 15px;
+}
+
+.social-links a {
+    color: var(--color-secondary);
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: var(--color-primary);
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 0.9em;
+    opacity: 0.7;
+}
